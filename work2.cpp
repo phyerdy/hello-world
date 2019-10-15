@@ -11,11 +11,12 @@ int main()
 		n = temp;
 	}
 	for (i = n; i > 0; i--)
-		if (m % i == 0 && n % i == 0 && i==1)
-		{
-			printf("%d and %d coprime\n", m, n, i);
+		if (m % i == 0 && n % i ==0)
 			break;
-		}
+	if (i > 2)
+		printf("%d and %d are not mutually prime", m, n);
+	else
+		printf("%d and %d coprime", m, n);
 
 	return 0;
 }
